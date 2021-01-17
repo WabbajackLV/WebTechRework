@@ -1,10 +1,8 @@
 import React from "react";
-import stylesheet from '../styles.scss';
-import Header from './Header';
 
 function Us(){
     return (<div>
-        <Header/>
+        <p>ABOUT US PAGE</p>
     </div>);
 }
 
