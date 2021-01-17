@@ -14,13 +14,9 @@ $colors:(
 
 
 
-$phone: 660px;
+$phone: 550px;
 
-@media (max-width: $phone){
-    nav{
-        background-color: violet;
-    }
-}
+
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxx Type functions xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
 
@@ -176,3 +172,72 @@ Footer p {
 }
 
 
+@media only screen and (max-width: $phone){
+    button{
+        font-size: 16px;
+    }
+    Footer p{
+        font-size: 0.7rem;
+    }
+    Footer{
+        margin-top: 20rem;
+        height: 1rem;
+    }
+    .leftImg{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    .rigthImg{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        
+    }
+    
+    .offerRow{
+        width: 50%;
+        margin: 5rem auto 0 auto;
+        text-align: justify;
+        line-height: 1.5;
+    
+    }
+    
+    .offerRowRight{
+        width: 50%;
+        margin: 6rem auto 0 auto;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    
+    .paragrRight{
+        width: 100%;
+        margin: 2rem auto 0 auto;
+        text-align: justify;
+    
+    }
+
+    .backgroundAboutUs{
+        visibility: hidden;
+    }
+    
+    .aboutUs{
+        background-color: color(primary);
+    }
+    
+    .aboutUsText{
+        color: color(darker);
+        line-height: 2rem;
+        font-size: 14pt;
+        text-align: justify;
+        position: none;
+        top: 5rem;
+        left: 6rem;
+        width: 65%;
+    }
+
+
+}
