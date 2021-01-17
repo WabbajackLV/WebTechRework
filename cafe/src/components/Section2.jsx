@@ -1,7 +1,7 @@
 import React from "react";
 import cup_coffee from '../img/cup-coffee.jpg';
 import table from '../img/table.jpg';
-import about from '../img/about.jpg';
+import Footer from './Footer';
 
 function Section2(){
     return (<section>
@@ -17,11 +17,7 @@ function Section2(){
                 <img className="rigthImg" src={table} alt=""/>
                 <p class="paragrRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet consequat dapibus. Nam suscipit magna tempor euismod eleifend. Vestibulum et mollis ipsum, eu fermentum ex. Ut a urna at dolor.</p>
             </div>
-            {/* Left side paragraph */}
-            <div className="offerRow lastOffer">
-                <img className="leftImg" src={about} alt=""/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet consequat dapibus. Nam suscipit magna tempor euismod eleifend. Vestibulum et mollis ipsum, eu fermentum ex. Ut a urna at dolor.</p>
-            </div>
+            <Footer/>
     </section>);
 }
 

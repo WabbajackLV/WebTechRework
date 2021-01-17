@@ -10,11 +10,11 @@ $colors:(
     @return map-get($colors, $color-name);
 }
 
-@mixin phone {
-    @media(max-width: 599px){
-        @content;
-    }
-}
+// @mixin phone {
+//     @media(max-width: 599px){
+//         @content;
+//     }
+// }
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxx Type functions xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
 
@@ -26,7 +26,7 @@ body{
 }
 
 Header{
-    background-color: #682c0e;
+    background-color: color(darker);
     overflow: hidden;
     text-align: center;
     position: fixed;
@@ -38,18 +38,18 @@ Header{
 Header a{
     margin: 0 20px 0 20px;
     display: inline-block;
-    color: color(secondary);
+    color: color(primary);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 32px;
-    @media phone{
-        font-size: 18px;
-    }
+    // @media phone{
+    //     font-size: 18px;
+    // }
     
     &:hover{
         background-color: color(secondary);
-        color: #582c0e;
+        color: color(darker);
     }
 }
 
@@ -84,14 +84,14 @@ p{
 }
 
 Footer{
-    position: fixed;
     text-align: center;
+    margin-top: 50rem;
     left: 0;
     bottom: 0;
+    right: 0;
     width: 100%;
-    height: 3.5rem;
+    height: 1.5rem;
     background-color: color(darker);
-    color: color(primary);
     font-size: 1rem;
 }
 
@@ -139,13 +139,9 @@ Footer p {
 
 .offerRowRight{
     width: 100%;
-    margin: 18rem 100px 100px 0;
+    margin: 26rem 100px 100px 0;
     text-align: left;
     line-height: 1.5;
-}
-
-.lastOffer{
-    margin-top: 40rem;
 }
 
 .paragrRight{
@@ -155,24 +151,4 @@ Footer p {
     float: right;
     text-align: right;
 
-}
-
-.coffeeBeans{
-    position: absolute;
-    height: 7rem;
-    margin-left: 60rem;
-    margin-top: 5rem;
-    z-index: -1;
-    @include mobile{
-        display: none;
-        
-    }
-   
-}
-
-.coffeeCup{
-    position: absolute;
-    display: block;
-    height: 10rem;
-    margin: 0rem 0 13rem 10rem;
 }
