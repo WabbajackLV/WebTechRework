@@ -1,3 +1,5 @@
+@import './styles.css';
+
 $colors:(
     primary: #f9e0ae,
     secondary: #fc8621,
@@ -10,11 +12,15 @@ $colors:(
     @return map-get($colors, $color-name);
 }
 
-// @mixin phone {
-//     @media(max-width: 599px){
-//         @content;
-//     }
-// }
+
+
+$phone: 660px;
+
+@media (max-width: $phone){
+    nav{
+        background-color: violet;
+    }
+}
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxx Type functions xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
 
@@ -33,6 +39,7 @@ nav{
     top: 0;
     width: 100%;
     z-index: 2;
+    
 }
 
 button{
@@ -45,16 +52,12 @@ button{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 32px;
-    // @media phone{
-    //     font-size: 18px;
-    // }
     
     &:hover{
         background-color: color(secondary);
         color: color(darker);
     }
 }
-
 
 
 h1{
@@ -100,8 +103,6 @@ Footer{
 Footer p {
     color: color(primary);
 }
-
-
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Class Functions xxxxxxxxxxxxxxxxxxxxxxxxx
 

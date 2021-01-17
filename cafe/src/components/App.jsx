@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Main from './Main';
-import stylesheet from '../styles.scss';
+import stylesheet from '../styles.css';
 import AboutUs from './AboutUs';
 import Footer from './Footer';
 
