@@ -21,6 +21,6 @@ In this project, I aim to create a web page that could be used for a Cafe.
     
     **Key Note:**
     If there are any problems with node, try using:
-    1) npm uninstall node-sass
-    2) npm npm install node-sass@4.14.1
+    1. npm uninstall node-sass
+    2. npm npm install node-sass@4.14.1
     
