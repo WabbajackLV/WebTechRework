@@ -18,6 +18,7 @@ In this project, I aim to create a web page that could be used for a Cafe.
 * To add sass to project the following commands were used:
     * npm install sass-loader --save
     * npm install node-sass --save
+    
     **Key Note:**
     If there are any problems with node, try using:
     1) npm uninstall node-sass
