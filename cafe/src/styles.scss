@@ -25,7 +25,7 @@ body{
     
 }
 
-Header{
+nav{
     background-color: color(darker);
     overflow: hidden;
     text-align: center;
@@ -35,10 +35,12 @@ Header{
     z-index: 2;
 }
 
-Header a{
+button{
     margin: 0 20px 0 20px;
     display: inline-block;
     color: color(primary);
+    border-style: none;
+    background-color: color(darker);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
