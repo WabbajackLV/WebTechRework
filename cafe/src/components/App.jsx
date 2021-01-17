@@ -1,9 +1,8 @@
 import React, {useState} from "react";
 import Main from './Main';
 import stylesheet from '../styles.scss';
-import AboutUs from './Us';
-
-var state = {visible: true}
+import AboutUs from './AboutUs';
+import Footer from './Footer';
 
 function App(){
     const [active, setActive] = useState("Home")
@@ -16,11 +15,12 @@ function App(){
                 <button onClick={() => setActive("About Us")}>About Us</button>
             </nav>
             {active === "Home" && 
-            <Main />
+            <Main/>
             }
             {active === "About Us" && 
-            <h1>Whut?</h1>
+            <AboutUs/>
             }
+
             
         </div>
     );

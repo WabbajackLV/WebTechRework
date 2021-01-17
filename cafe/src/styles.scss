@@ -154,3 +154,23 @@ Footer p {
     text-align: right;
 
 }
+
+.backgroundAboutUs{
+    margin: 0;
+}
+
+.aboutUsText{
+    color: color(darker);
+    line-height: 2rem;
+    font-size: 18pt;
+    text-align: justify;
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+    width: 30%;
+}
+
+.aboutUsFooter{
+    margin-top: -1.5rem;
+}
+
