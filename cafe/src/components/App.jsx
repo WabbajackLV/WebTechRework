@@ -27,6 +27,21 @@ function App(){
     //     let res = await api.post('/', {title: "Test", id: 4, price: 1.20})
     // }
 
+    // class App extends React.Component{
+    //     constructor(props){
+    //         super(props);
+    //         this.state={apiResponse: ""};
+    //     }
+    //     callApi(){
+    //         fetch("http://localhost:3000/coffeeApi")
+    //         .then(res => res.text())
+    //         .then(res => this.setState({apiResponse: res}))
+    //     }
+    //     componentWillMount(){
+    //         this.callApi();
+    //     }
+    // }
+
     const [active, setActive] = useState("Home")
     return (
         <div>
@@ -45,9 +60,6 @@ function App(){
             {active === "Order" && 
             <a href="../order.html">Order</a>
             }
-            {/* {active === "Menu" && 
-             {this.state.products.map(product => <h2 key={product.id}>{product.title}</h2>)}
-            } */}
 
             
         </div>
