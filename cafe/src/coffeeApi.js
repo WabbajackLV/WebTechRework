@@ -1,5 +1,7 @@
 //jshint esversion:6
 
+//API requests
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -23,6 +25,7 @@ const productSchema = {
 }
 
 const Product = mongoose.model("Product", productSchema);
+
 
 app.route("/products")
 .get(function(req, res){

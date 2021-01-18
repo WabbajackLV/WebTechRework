@@ -1,3 +1,6 @@
+//For consuming API
+
+
 class ItemService {
     constructor() {
         this.items = [
