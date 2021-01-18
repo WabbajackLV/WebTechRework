@@ -1,4 +1,4 @@
-//For consuming API
+//For consuming
 
 
 class ItemService {

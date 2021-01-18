@@ -3,7 +3,23 @@ import Main from './Main';
 import stylesheet from '../styles.scss';
 import AboutUs from './AboutUs';
 import Footer from './Footer';
+import CreateProduct from "./CreateProduct";
 function App(){
+    const[products, setProduct] = useState([]);
+
+    // function addProduct(product){
+    //     setProduct(prevProduct => {
+    //         return [...prevProduct, newProduct];
+    //     });
+    // }
+
+    function deleteProduct(id){
+        setProduct(prevProduct => {
+            prevProduct.filter((productItem, index) => {
+                return index !== id;
+            });
+        });
+    }
 
     const [active, setActive] = useState("Home")
     return (
@@ -21,7 +37,12 @@ function App(){
             <AboutUs/>
             }
             {active === "Order" && 
-            <a href="../order.html">Order</a>
+             <a href="../order.html">Order</a>
+                // <CreateProduct onAdd={addProduct}/>
+                // {products.map(productItem => {
+                //     return <Product title={productItem.title} content={productItem.price} onDelete={deleteProduct} />;
+                // })}
+
             }
 
             

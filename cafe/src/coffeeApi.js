@@ -80,7 +80,7 @@ app.route("/products/:productTitle")
         {title: req.params.productTitle},
         function(err){
             if(!err){
-                res.send("Successfully deleted specified product";
+                res.send("Successfully deleted specified product");
             }else{
                 res.send(err);
             }
