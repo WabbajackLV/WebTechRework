@@ -25,3 +25,15 @@ In this project, I aim to create a web page that could be used for a Cafe.
     1. npm uninstall node-sass
     2. npm npm install node-sass@4.14.1
     
+* To add mongoDB first download and install the programme then use command(npm i mongodb)
+* To add axios use(npm install axios) command
+
+
+# Side Notes
+
+*****Sadly the connection between node and react has not been accomplished*****
+*****The requests methods have been created but not connected to the endpoints*****
+*****The endpoints are only partialy done*****
+
+
+     
