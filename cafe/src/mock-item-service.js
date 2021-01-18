@@ -1,4 +1,4 @@
-//For consuming
+//Base template for consuming API requests
 
 
 class ItemService {

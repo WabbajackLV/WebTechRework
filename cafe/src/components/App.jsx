@@ -4,15 +4,22 @@ import stylesheet from '../styles.scss';
 import AboutUs from './AboutUs';
 import Footer from './Footer';
 import CreateProduct from "./CreateProduct";
+
+
+//Main app 
+
+
 function App(){
     const[products, setProduct] = useState([]);
 
+    //xxxxx For adding a new product xxxxxxx
     // function addProduct(product){
     //     setProduct(prevProduct => {
     //         return [...prevProduct, newProduct];
     //     });
     // }
 
+    //xxxxx For deleting a  product xxxxxxx
     function deleteProduct(id){
         setProduct(prevProduct => {
             prevProduct.filter((productItem, index) => {
@@ -37,7 +44,12 @@ function App(){
             <AboutUs/>
             }
             {active === "Order" && 
+
+                //xxx Place holder for the real functionality implementation
              <a href="../order.html">Order</a>
+
+                //xxxxx For menu view to CRUD items xxxxxxx
+
                 // <CreateProduct onAdd={addProduct}/>
                 // {products.map(productItem => {
                 //     return <Product title={productItem.title} content={productItem.price} onDelete={deleteProduct} />;

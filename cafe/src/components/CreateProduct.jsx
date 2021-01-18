@@ -1,4 +1,8 @@
 import React, {useState}from 'react';
+
+
+
+//For creating a new product
 function CreateProduct(props){
 
     const[product, setProduct] = useState({
