@@ -71,6 +71,18 @@ app.route("/products/:productTitle")
             }
         }
     );
+})
+.delete(function(req, res){
+    Product.deleteOne(
+        {title: req.params.productTitle},
+        function(err){
+            if(!err){
+                res.send("Successfully deleted specified product";
+            }else{
+                res.send(err);
+            }
+        }
+    );
 });
 
 
