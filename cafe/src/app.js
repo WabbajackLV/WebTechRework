@@ -50,6 +50,30 @@ app.route("/products")
     });
 });
 
+app.route("/products/:productTitle")
+.get(function(req, res){
+    Product.findOne({title: req.params.productTitle}, function(err, foundProduct){
+        if(foundProduct){
+            res.send(foundProduct);
+        }else{
+            res.send("No products matching that title were found");
+        }
+    });
+})
+.put(function(req, res){
+    Product.update(
+        {title: req.params.productTitle},
+        {title: req.body.title, price: req.body.price},
+        {overwrite: true},
+        function(err){
+            if(!err){
+                res.send("Successfully updated article");
+            }
+        }
+    );
+});
+
+
 
 
 
