@@ -32,7 +32,7 @@ In this project, I aim to create a web page that could be used for a Cafe.
 # Side Notes
 
 *****Sadly the connection between node and react has not been accomplished*****
-*****The requests methods have been created but not connected to the endpoints*****
+*****The request methods have been created but not connected to the endpoints*****
 *****The endpoints are only partialy done*****
 
 
