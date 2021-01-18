@@ -20,6 +20,9 @@ function App(){
             {active === "About Us" && 
             <AboutUs/>
             }
+            {active === "Order" && 
+            <a href="../order.html">Order</a>
+            }
 
             
         </div>

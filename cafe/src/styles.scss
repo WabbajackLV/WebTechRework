@@ -39,6 +39,18 @@ nav{
     
 }
 
+a{
+    position: absolute;
+    text-decoration: none;
+    background-color:color(darker);
+    margin: 10rem auto 0 55rem;
+    border-style: solid;
+    border-color: color(secondary);
+    color: color(primary);
+    width: 10rem;
+    font-size: 50pt;
+}
+
 button{
     margin: 0 20px 0 20px;
     display: inline-block;
@@ -172,6 +184,82 @@ Footer p {
     width: 30%;
 }
 
+@media only screen and (max-width: $tablet){
+    button{
+        font-size: 32px;
+    }
+    Footer p{
+        font-size: 1rem;
+    }
+    Footer{
+        margin-top: 20rem;
+        height: 1.7rem;
+    }
+    .leftImg{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    .rigthImg{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        
+    }
+    
+    .offerRow{
+        width: 50%;
+        margin: 5rem auto 0 auto;
+        text-align: justify;
+        line-height: 1.5;
+    
+    }
+    
+    .offerRowRight{
+        width: 50%;
+        margin: 6rem auto 0 auto;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    
+    .paragrRight{
+        width: 100%;
+        margin: 2rem auto 0 auto;
+        text-align: justify;
+    
+    }
+
+    .backgroundAboutUs{
+        visibility: hidden;
+    }
+    
+    .aboutUs{
+        background-color: color(primary);
+    }
+    
+    .aboutUsText{
+        color: color(darker);
+        line-height: 3rem;
+        font-size: 24pt;
+        text-align: justify;
+        position: none;
+        top: 7rem;
+        left: 13rem;
+        right: auto;
+        width: 65%;
+    }
+    a{
+        margin: 10rem auto 0 28rem;
+    }
+    
+
+}
+
+
+
 
 @media only screen and (max-width: $phone){
     button{
@@ -239,80 +327,10 @@ Footer p {
         left: 6rem;
         width: 65%;
     }
-
-
-}
-
-@media only screen and (max-width: $tablet){
-    body{
-        background-color: violet;
+    a{
+        margin: 10rem auto 0 12rem;
+        font-size: 30pt;
+        width: 6rem;
     }
-    button{
-        font-size: 32px;
-    }
-    Footer p{
-        font-size: 1rem;
-    }
-    Footer{
-        margin-top: 20rem;
-        height: 1.7rem;
-    }
-    .leftImg{
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-    
-    .rigthImg{
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        
-    }
-    
-    .offerRow{
-        width: 50%;
-        margin: 5rem auto 0 auto;
-        text-align: justify;
-        line-height: 1.5;
-    
-    }
-    
-    .offerRowRight{
-        width: 50%;
-        margin: 6rem auto 0 auto;
-        text-align: justify;
-        line-height: 1.5;
-    }
-    
-    .paragrRight{
-        width: 100%;
-        margin: 2rem auto 0 auto;
-        text-align: justify;
-    
-    }
-
-    .backgroundAboutUs{
-        visibility: hidden;
-    }
-    
-    .aboutUs{
-        background-color: color(primary);
-    }
-    
-    .aboutUsText{
-        color: color(darker);
-        line-height: 3rem;
-        font-size: 24pt;
-        text-align: justify;
-        position: none;
-        top: 7rem;
-        left: 13rem;
-        right: auto;
-        width: 65%;
-    }
-
 
 }
